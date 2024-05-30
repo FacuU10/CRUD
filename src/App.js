@@ -6,6 +6,7 @@ import { supabase } from './supabaseClient';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import HomePage from './HomePage';
+
 import AboutUsPage from './AboutUsPage'; // Página de información sobre la empresa
 import './App.css';
 

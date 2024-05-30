@@ -4,23 +4,25 @@ import { deleteProduct, updateProduct } from './supabaseClient';
 
 function ProductCard({ product, onProductDeleted, onProductUpdated }) {
   const [showEditModal, setShowEditModal] = useState(false);
-  const [newDescription, setNewDescription] = useState(product.descripcion);
+  const [newDescription, setNewDescription] = useState(product.description);
 
   const handleDelete = async () => {
-    await deleteProduct(product.id);
-    onProductDeleted(product.id);
+    try {
+    await deleteProduct(product.productos);
+     } catch (error) {
+      console.error('error al manejar la eliminacion del producto', error);
+     }
   };
 
   const handleEdit = async () => {
-    await updateProduct(product.id, newDescription);
-    onProductUpdated(product.id, newDescription);
+    await updateProduct(product.productos, newDescription);
     setShowEditModal(false);
   };
 
   return (
     <Card>
       <Card.Body>
-        <Card.Text>{product.descripcion}</Card.Text>
+        <Card.Text>{product.description}</Card.Text>
         <Button variant="danger" onClick={handleDelete}>Eliminar</Button>
         <Button variant="primary" onClick={() => setShowEditModal(true)}>Editar</Button>
       </Card.Body>

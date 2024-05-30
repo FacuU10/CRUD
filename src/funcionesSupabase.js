@@ -43,7 +43,7 @@ async function signIn(email, password) {
 // Almacenar producto
 async function guardarProducto(description) {
   try {
-    const { data, error } = await supabase.from('products').insert({
+    const { data, error } = await supabase.from('productos').insert({
       description,
     });
     if (error) {
@@ -59,7 +59,7 @@ async function guardarProducto(description) {
 // Obtener productos
 async function obtenerProductos() {
   try {
-    const { data, error } = await supabase.from('products').select('*');
+    const { data, error } = await supabase.from('productos').select('*');
     if (error) {
       throw error;
     }

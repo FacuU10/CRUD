@@ -41,9 +41,9 @@ async function signOut() {
 }
 
 // Almacenar producto
-async function guardarProducto(descripcion) {
+async function guardarProducto(description) {
     try {
-        const { data, error } = await supabase.from('productos').insert({ descripcion });
+        const { data, error } = await supabase.from('productos').insert({ description });
         if (error) throw error;
         return data;
     } catch (error) {
@@ -69,9 +69,9 @@ async function obtenerProductos() {
 async function deleteProduct(productId) {
   try {
       const { data, error } = await supabase
-          .from('productos')
+          .from('products')
           .delete()
-          .eq('id', productId);
+          .eq('productos', productId);
       if (error) throw error;
       return data;
   } catch (error) {
@@ -84,9 +84,9 @@ async function deleteProduct(productId) {
 async function updateProduct(productId, newDescription) {
   try {
       const { data, error } = await supabase
-          .from('productos')
-          .update({ descripcion: newDescription })
-          .eq('id', productId);
+          .from('products')
+          .update({ description: newDescription })
+          .eq('productos', productId);
       if (error) throw error;
       return data;
   } catch (error) {
