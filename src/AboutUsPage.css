@@ -1,0 +1,38 @@
+
+
+.about-us-container {
+    text-align: center;
+  }
+  
+  .about-us-heading {
+    color: #007bff; 
+    margin-bottom: 20px;
+  }
+  
+  .about-us-text {
+    color: black; 
+  }
+  
+  .center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%; 
+    height: auto; 
+  }
+  
+  
+  .image-container {
+    text-align: center;
+  }
+  .follow-us {
+    animation-name: resaltar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes resaltar {
+    0% { color: black; }
+    50% { color: #007bff; } /* Cambia a azul durante la mitad de la animación */
+    100% { color: black; }
+  }
+  

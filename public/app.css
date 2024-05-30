@@ -1,0 +1,8 @@
+.app-container {
+    background-image: url('/espejo.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 60px; /* Para dejar espacio para la barra de navegación */
+  }
+  

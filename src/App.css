@@ -1,0 +1,62 @@
+/* Estilos generales de la aplicación */
+
+/* Estilos del encabezado */
+.navbar {
+  border-bottom: 2px solid #00acc1; /* Borde inferior azul */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Tamaño de fuente del nombre de la marca */
+}
+
+.nav-link {
+  font-size: 1.2rem; /* Tamaño de fuente de los enlaces del menú */
+}
+
+/* Estilos del contenedor principal */
+.container {
+  padding-top: 2rem; /* Espacio superior */
+}
+
+/* Estilos para centrar el contenido verticalmente */
+.vh-100 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para ajustar el tamaño del botón del menú desplegable en dispositivos móviles */
+.navbar-toggler-icon {
+  width: 1.5em; /* Ancho del icono */
+  height: 1.5em; /* Altura del icono */
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación */
+.nav-link {
+  color: #ffffff; /* Color del texto */
+}
+
+.nav-link:hover {
+  color: #00acc1; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos específicos para el formulario de inicio de sesión y registro */
+.form-control {
+  margin-bottom: 1.5rem; /* Espacio entre los campos de formulario */
+}
+
+.btn-primary {
+  background-color: #00acc1; 
+  border-color: #00acc1; 
+}
+
+.btn-primary:hover {
+  background-color: #007b8c; /* Cambio de color al pasar el mouse */
+  border-color: #007b8c; /* Cambio de color del borde al pasar el mouse */
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 172, 193, 0.5); /* Sombra al enfocar el botón */
+}
+
+/* Otros estilos específicos según sea necesario */
